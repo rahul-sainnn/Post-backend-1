@@ -14,8 +14,8 @@ connectDB();
 //REST OBJECT
 const app = express();
 
-app.get("/", (res) => {
-  res.send("wellcome");
+app.get('/', (req, res) => {
+    res.send('Welcome to My Server!'); 
 });
 
 
