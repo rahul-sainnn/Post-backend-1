@@ -14,6 +14,11 @@ connectDB();
 //REST OBJECT
 const app = express();
 
+app.get("/", (res) => {
+  res.send("wellcome");
+});
+
+
 //middlewares
 app.use(
   cors({
